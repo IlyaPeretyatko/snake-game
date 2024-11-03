@@ -1,0 +1,29 @@
+plugins {
+    id 'application'
+    id 'org.openjfx.javafxplugin' version '0.1.0'
+}
+
+group = 'org.nsu.networks'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.openjfx:javafx-base:24-ea+15'
+    implementation 'org.openjfx:javafx-graphics:24-ea+15'
+    implementation 'org.openjfx:javafx-controls:24-ea+15'
+    implementation 'org.openjfx:javafx-fxml:24-ea+15'
+}
+
+
+
+application {
+    mainClass = 'org.nsu.networks.Main'
+}
+
+javafx {
+    version = "24-ea+15"
+    modules = [ 'javafx.controls', 'javafx.fxml' ]
+}
