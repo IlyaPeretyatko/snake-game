@@ -11,19 +11,17 @@ repositories {
 }
 
 dependencies {
-    implementation 'org.openjfx:javafx-base:24-ea+15'
-    implementation 'org.openjfx:javafx-graphics:24-ea+15'
-    implementation 'org.openjfx:javafx-controls:24-ea+15'
-    implementation 'org.openjfx:javafx-fxml:24-ea+15'
-}
-
-
-
-application {
-    mainClass = 'org.nsu.networks.Main'
+    implementation 'org.openjfx:javafx-base:21.0.1'
+    implementation 'org.openjfx:javafx-graphics:21.0.1'
+    implementation 'org.openjfx:javafx-controls:21.0.1'
+    implementation 'org.openjfx:javafx-fxml:21.0.1'
 }
 
 javafx {
-    version = "24-ea+15"
+    version = "21.0.1"
     modules = [ 'javafx.controls', 'javafx.fxml' ]
+}
+
+application {
+    mainClass = 'org.nsu.networks.Main'
 }
