@@ -16,7 +16,6 @@ dependencies {
     annotationProcessor 'org.projectlombok:lombok:1.18.20'
     implementation 'com.google.protobuf:protobuf-java:4.28.3'
     implementation 'com.google.protobuf:protobuf-java-util:4.28.3'
-    // Удаляем javalite, если он ранее не использовался
 }
 
 protobuf {
@@ -39,4 +38,12 @@ javafx {
 
 application {
     mainClass = 'org.nsu.networks.Main'
+}
+
+sourceSets {
+    main {
+        java {
+            srcDirs 'src/main/java', 'build/generated/source/proto/main/java'
+        }
+    }
 }
