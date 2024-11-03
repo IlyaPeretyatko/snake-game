@@ -1,6 +1,7 @@
 plugins {
     id 'application'
     id 'org.openjfx.javafxplugin' version '0.1.0'
+    id 'com.google.protobuf' version '0.8.18'
 }
 
 group = 'org.nsu.networks'
@@ -11,15 +12,29 @@ repositories {
 }
 
 dependencies {
-    implementation 'org.openjfx:javafx-base:21.0.1'
-    implementation 'org.openjfx:javafx-graphics:21.0.1'
-    implementation 'org.openjfx:javafx-controls:21.0.1'
-    implementation 'org.openjfx:javafx-fxml:21.0.1'
+    compileOnly 'org.projectlombok:lombok:1.18.20'
+    annotationProcessor 'org.projectlombok:lombok:1.18.20'
+    implementation 'com.google.protobuf:protobuf-java:4.28.3'
+    implementation 'com.google.protobuf:protobuf-java-util:4.28.3'
+    // Удаляем javalite, если он ранее не использовался
+}
+
+protobuf {
+    protoc {
+        artifact = "com.google.protobuf:protoc:4.28.3"
+    }
+    generateProtoTasks {
+        all().each { task ->
+            task.builtins {
+                java {}
+            }
+        }
+    }
 }
 
 javafx {
     version = "21.0.1"
-    modules = [ 'javafx.controls', 'javafx.fxml' ]
+    modules = [ 'javafx.controls', 'javafx.fxml', 'javafx.base', 'javafx.graphics' ]
 }
 
 application {
