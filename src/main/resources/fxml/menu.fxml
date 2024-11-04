@@ -17,15 +17,15 @@
       </Label>
       <HBox alignment="CENTER" prefHeight="50.0" prefWidth="100.0">
          <children>
-            <TextField />
+            <TextField id="nameTextField" />
          </children>
       </HBox>
-      <Button id="newGameButton" mnemonicParsing="false" prefWidth="120.0" text="New Game">
+      <Button id="newGameButton" onMouseClicked="#newGameButtonClicked" mnemonicParsing="false" prefWidth="120.0" text="New Game">
          <font>
             <Font size="16.0" />
          </font>
       </Button>
-      <Button id="connectButton" mnemonicParsing="false" prefWidth="120.0" text="Connect">
+      <Button id="connectButton" onMouseClicked="#connectButtonClicked" mnemonicParsing="false" prefWidth="120.0" text="Connect">
          <font>
             <Font size="16.0" />
          </font>

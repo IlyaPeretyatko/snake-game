@@ -17,9 +17,9 @@ dependencies {
     implementation 'com.google.protobuf:protobuf-java:4.28.3'
     implementation 'com.google.protobuf:protobuf-java-util:4.28.3'
 
-    implementation 'org.springframework:spring-context:6.0.9'
-    implementation 'org.springframework:spring-beans:6.0.9'
-    implementation 'org.springframework:spring-core:6.0.9'
+    implementation 'org.springframework:spring-context:6.1.14'
+    implementation 'org.springframework:spring-beans:6.1.14'
+    implementation 'org.springframework:spring-core:6.1.14'
 }
 
 protobuf {
