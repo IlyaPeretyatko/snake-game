@@ -16,8 +16,9 @@ public class Main extends Application {
 
     @Override
     public void start(Stage primaryStage) throws IOException {
-        Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/fxml/root.fxml")));
-        Scene scene = new Scene(root, 900, 600);
+        Parent menu = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/fxml/menu.fxml")));
+        Scene scene = new Scene(menu, 400, 400);
+        primaryStage.setTitle("Snake");
         primaryStage.setScene(scene);
         primaryStage.setResizable(false);
         primaryStage.show();
