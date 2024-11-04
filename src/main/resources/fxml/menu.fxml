@@ -16,21 +16,19 @@
          </font>
       </Label>
       <HBox alignment="CENTER" prefHeight="50.0" prefWidth="100.0">
-         <children>
-            <TextField id="nameTextField" />
-         </children>
+         <TextField fx:id="nameTextField"/>
       </HBox>
-      <Button id="newGameButton" onMouseClicked="#newGameButtonClicked" mnemonicParsing="false" prefWidth="120.0" text="New Game">
+      <Button fx:id="newGameButton" onMouseClicked="#newGameButtonClicked" mnemonicParsing="false" prefWidth="120.0" text="New Game">
          <font>
             <Font size="16.0" />
          </font>
       </Button>
-      <Button id="connectButton" onMouseClicked="#connectButtonClicked" mnemonicParsing="false" prefWidth="120.0" text="Connect">
+      <Button fx:id="connectButton" onMouseClicked="#connectButtonClicked" mnemonicParsing="false" prefWidth="120.0" text="Connect">
          <font>
             <Font size="16.0" />
          </font>
       </Button>
-      <Button id="exitButton" onMouseClicked="#exitButtonClicked" mnemonicParsing="false" prefWidth="120.0" text="Exit">
+      <Button fx:id="exitButton" onMouseClicked="#exitButtonClicked" mnemonicParsing="false" prefWidth="120.0" text="Exit">
          <font>
             <Font size="16.0" />
          </font>
