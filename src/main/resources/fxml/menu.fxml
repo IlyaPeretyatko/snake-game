@@ -30,11 +30,6 @@
             <Font size="16.0" />
          </font>
       </Button>
-      <Button id="optionsButton" mnemonicParsing="false" prefWidth="120.0" text="Options">
-         <font>
-            <Font size="16.0" />
-         </font>
-      </Button>
       <Button id="exitButton" onMouseClicked="#exitButtonClicked" mnemonicParsing="false" prefWidth="120.0" text="Exit">
          <font>
             <Font size="16.0" />

@@ -16,9 +16,6 @@ public class MenuController {
     private Button connectButton;
 
     @FXML
-    private Button optionsButton;
-
-    @FXML
     private Button exitButton;
 
     public void exitButtonClicked(MouseEvent mouseEvent) {
