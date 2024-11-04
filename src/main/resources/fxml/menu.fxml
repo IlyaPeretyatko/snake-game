@@ -8,7 +8,7 @@
 <?import javafx.scene.text.Font?>
 
 
-<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="400.0" spacing="10.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="400.0" spacing="10.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.nsu.networks.controllers.MenuController">
    <children>
       <Label prefHeight="0.0" prefWidth="100.0" text="Nickname:" textAlignment="CENTER">
          <font>
@@ -20,22 +20,22 @@
             <TextField />
          </children>
       </HBox>
-      <Button mnemonicParsing="false" prefWidth="120.0" text="New Game">
+      <Button id="newGameButton" mnemonicParsing="false" prefWidth="120.0" text="New Game">
          <font>
             <Font size="16.0" />
          </font>
       </Button>
-      <Button mnemonicParsing="false" prefWidth="120.0" text="Connect">
+      <Button id="connectButton" mnemonicParsing="false" prefWidth="120.0" text="Connect">
          <font>
             <Font size="16.0" />
          </font>
       </Button>
-      <Button mnemonicParsing="false" prefWidth="120.0" text="Options">
+      <Button id="optionsButton" mnemonicParsing="false" prefWidth="120.0" text="Options">
          <font>
             <Font size="16.0" />
          </font>
       </Button>
-      <Button mnemonicParsing="false" prefWidth="120.0" text="Exit">
+      <Button id="exitButton" onMouseClicked="#exitButtonClicked" mnemonicParsing="false" prefWidth="120.0" text="Exit">
          <font>
             <Font size="16.0" />
          </font>
