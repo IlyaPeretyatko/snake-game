@@ -6,7 +6,6 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
 import javafx.scene.input.MouseEvent;
 import javafx.stage.Stage;
@@ -53,12 +52,17 @@ public class MenuController implements Initializable {
         }
     }
 
-    public void connectButtonClicked(MouseEvent mouseEvent) {
+    public void connectButtonClicked(MouseEvent mouseEvent) throws IOException {
         String name = nameTextField.getText();
         if (name.isEmpty()) {
             throwErrorEmptyNickname();
         } else {
-
+            gameModel.setName(name);
+            Parent newGameParent = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/fxml/connect.fxml")));
+            Scene newGameScene = new Scene(newGameParent);
+            Stage window = (Stage)((Node)mouseEvent.getSource()).getScene().getWindow();
+            window.setScene(newGameScene);
+            window.show();
         }
     }
 
