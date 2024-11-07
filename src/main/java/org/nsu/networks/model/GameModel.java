@@ -13,6 +13,10 @@ public class GameModel {
     public static GameModel getInstance() {
         if (instance == null) {
             instance = new GameModel();
+            instance.setName("Player");
+            instance.setWidthField(30);
+            instance.setHeightField(30);
+            instance.setFoodStatic(0);
         }
         return instance;
     }
@@ -39,7 +43,7 @@ public class GameModel {
 
     @Setter
     @Getter
-    private int stateDelay;
+    private double stateDelay;
 
     @Setter
     @Getter

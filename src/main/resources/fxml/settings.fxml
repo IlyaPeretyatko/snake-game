@@ -21,8 +21,8 @@
    </Label>
    <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="10.0">
       <Label text="FIELD SIZE:"/>
-      <TextField fx:id="widthTextField" prefWidth="30.0"/>
-      <TextField fx:id="heightTextField" prefWidth="30.0"/>
+      <TextField fx:id="widthTextField" prefWidth="35.0"/>
+      <TextField fx:id="heightTextField" prefWidth="35.0"/>
    </HBox>
    <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="10.0">
       <Label text="FOOD STATIC:"/>
