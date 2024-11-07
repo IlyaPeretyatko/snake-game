@@ -14,8 +14,8 @@ public class GameModel {
         if (instance == null) {
             instance = new GameModel();
             instance.setName("Player");
-            instance.setWidthField(30);
-            instance.setHeightField(30);
+            instance.setWidthField(25);
+            instance.setHeightField(25);
             instance.setFoodStatic(0);
         }
         return instance;

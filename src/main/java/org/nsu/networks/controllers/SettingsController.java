@@ -57,10 +57,10 @@ public class SettingsController implements Initializable {
     private void checkIntegerTextFields() {
         try {
             if (widthTextField.getText().isEmpty()) {
-                widthTextField.setText("30");
+                widthTextField.setText("25");
             }
             if (heightTextField.getText().isEmpty()) {
-                heightTextField.setText("30");
+                heightTextField.setText("25");
             }
             if (foodStaticTextField.getText().isEmpty()) {
                 foodStaticTextField.setText("0");
@@ -68,11 +68,11 @@ public class SettingsController implements Initializable {
             int width = Integer.parseInt(widthTextField.getText());
             int height = Integer.parseInt(heightTextField.getText());
             int foodStatic = Integer.parseInt(foodStaticTextField.getText());
-            if (width >= 0 && height >= 0 && width <= 50 && height <= 50 && width % 5 == 0 && height % 5 == 0) {
+            if (width >= 10 && height >= 10 && width <= 50 && height <= 50 && width % 5 == 0 && height % 5 == 0) {
                 gameModel.setWidthField(width);
                 gameModel.setHeightField(height);
             } else {
-                throwError("Wrong sizes","Sizes must be from 5 to 50 and multiples of 5");
+                throwError("Wrong sizes","Sizes must be from 10 to 50 and multiples of 5");
                 return;
             }
             if (foodStatic >= 0 && foodStatic <= 5) {
