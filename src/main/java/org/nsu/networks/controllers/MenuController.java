@@ -13,21 +13,14 @@ import javafx.stage.Stage;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Alert.AlertType;
 import org.nsu.networks.model.GameModel;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Component;
 
 import java.io.IOException;
 import java.util.Objects;
 
-@Component
+
 public class MenuController {
 
-    private final GameModel gameModel;
-
-    @Autowired
-    public MenuController(GameModel gameModel) {
-        this.gameModel = gameModel;
-    }
+    private final GameModel gameModel = GameModel.getInstance();
 
     @FXML
     private TextField nameTextField;

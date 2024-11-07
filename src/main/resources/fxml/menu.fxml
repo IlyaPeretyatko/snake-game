@@ -8,30 +8,32 @@
 <?import javafx.scene.text.Font?>
 
 
-<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="400.0" spacing="10.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.nsu.networks.controllers.MenuController">
-   <children>
-      <Label prefHeight="0.0" prefWidth="100.0" text="Nickname:" textAlignment="CENTER">
-         <font>
-            <Font size="16.0" />
-         </font>
-      </Label>
-      <HBox alignment="CENTER" prefHeight="50.0" prefWidth="100.0">
-         <TextField fx:id="nameTextField"/>
-      </HBox>
-      <Button fx:id="newGameButton" onMouseClicked="#newGameButtonClicked" mnemonicParsing="false" prefWidth="120.0" text="New Game">
-         <font>
-            <Font size="16.0" />
-         </font>
-      </Button>
-      <Button fx:id="connectButton" onMouseClicked="#connectButtonClicked" mnemonicParsing="false" prefWidth="120.0" text="Connect">
-         <font>
-            <Font size="16.0" />
-         </font>
-      </Button>
-      <Button fx:id="exitButton" onMouseClicked="#exitButtonClicked" mnemonicParsing="false" prefWidth="120.0" text="Exit">
-         <font>
-            <Font size="16.0" />
-         </font>
-      </Button>
-   </children>
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+      prefHeight="500.0" prefWidth="400.0" spacing="10.0" xmlns="http://javafx.com/javafx/23.0.1"
+      xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.nsu.networks.controllers.MenuController">
+   <Label prefHeight="0.0" prefWidth="100.0" text="Nickname:" textAlignment="CENTER">
+      <font>
+         <Font size="16.0"/>
+      </font>
+   </Label>
+   <HBox alignment="CENTER" prefHeight="50.0" prefWidth="100.0">
+      <TextField fx:id="nameTextField"/>
+   </HBox>
+   <Button fx:id="newGameButton" onMouseClicked="#newGameButtonClicked" mnemonicParsing="false" prefWidth="120.0"
+           text="New Game">
+      <font>
+         <Font size="16.0"/>
+      </font>
+   </Button>
+   <Button fx:id="connectButton" onMouseClicked="#connectButtonClicked" mnemonicParsing="false" prefWidth="120.0"
+           text="Connect">
+      <font>
+         <Font size="16.0"/>
+      </font>
+   </Button>
+   <Button fx:id="exitButton" onMouseClicked="#exitButtonClicked" mnemonicParsing="false" prefWidth="120.0" text="Exit">
+      <font>
+         <Font size="16.0"/>
+      </font>
+   </Button>
 </VBox>

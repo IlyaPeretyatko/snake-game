@@ -8,69 +8,53 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="520.0" prefWidth="400.0" spacing="10.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.nsu.networks.controllers.SettingsController">
-   <children>
-      <Label text="Settings">
-         <font>
-            <Font size="18.0" />
-         </font>
-         <opaqueInsets>
-            <Insets top="10.0" />
-         </opaqueInsets>
-      </Label>
-      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="10.0">
-         <children>
-            <Label text="FIELD SIZE:" />
-            <TextField fx:id="widthTextField" prefWidth="30.0" />
-            <TextField fx:id="heightTextField" prefWidth="30.0" />
-         </children>
-      </HBox>
-      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="10.0">
-         <children>
-            <Label text="FOOD STATIC:" />
-            <TextField fx:id="foodStaticTextField" prefWidth="30.0" />
-         </children>
-      </HBox>
-      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="10.0">
-         <children>
-            <Label text="FOOD PER PLAYER:" />
-            <TextField fx:id="foodPerPlayerTextField" prefWidth="30.0" />
-         </children>
-      </HBox>
-      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="10.0">
-         <children>
-            <Label text="STATE DELAY:" />
-            <TextField fx:id="stateDelayTextField" prefWidth="30.0" />
-         </children>
-      </HBox>
-      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="10.0">
-         <children>
-            <Label text="DEAD FOOD PROB:" />
-            <TextField fx:id="deadFoodProbTextField" prefWidth="30.0" />
-         </children>
-      </HBox>
-      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="10.0">
-         <children>
-            <Label text="PING DELAY:" />
-            <TextField fx:id="pingDelayTextField" prefWidth="30.0" />
-         </children>
-      </HBox>
-      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="10.0">
-         <children>
-            <Label text="NODE TIMEOUT:" />
-            <TextField fx:id="nodeTimeoutTextField" prefWidth="30.0" />
-         </children>
-      </HBox>
-      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="10.0">
-         <children>
-            <Label text="MAX PLAYERS:" />
-            <TextField fx:id="maxPlayersTextField" prefWidth="30.0" />
-         </children>
-      </HBox>
-      <Button fx:id="startButton" onMouseClicked="#startButtonClicked" mnemonicParsing="false" text="Start">
-         <VBox.margin>
-            <Insets bottom="10.0" />
-         </VBox.margin>
-      </Button>
-   </children>
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+      prefHeight="520.0" prefWidth="400.0" spacing="10.0" xmlns="http://javafx.com/javafx/23.0.1"
+      xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.nsu.networks.controllers.SettingsController">
+   <Label text="Settings">
+      <font>
+         <Font size="18.0"/>
+      </font>
+      <opaqueInsets>
+         <Insets top="10.0"/>
+      </opaqueInsets>
+   </Label>
+   <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="10.0">
+      <Label text="FIELD SIZE:"/>
+      <TextField fx:id="widthTextField" prefWidth="30.0"/>
+      <TextField fx:id="heightTextField" prefWidth="30.0"/>
+   </HBox>
+   <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="10.0">
+      <Label text="FOOD STATIC:"/>
+      <TextField fx:id="foodStaticTextField" prefWidth="30.0"/>
+   </HBox>
+   <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="10.0">
+      <Label text="FOOD PER PLAYER:"/>
+      <TextField fx:id="foodPerPlayerTextField" prefWidth="30.0"/>
+   </HBox>
+   <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="10.0">
+      <Label text="STATE DELAY:"/>
+      <TextField fx:id="stateDelayTextField" prefWidth="30.0"/>
+   </HBox>
+   <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="10.0">
+      <Label text="DEAD FOOD PROB:"/>
+      <TextField fx:id="deadFoodProbTextField" prefWidth="30.0"/>
+   </HBox>
+   <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="10.0">
+      <Label text="PING DELAY:"/>
+      <TextField fx:id="pingDelayTextField" prefWidth="30.0"/>
+   </HBox>
+   <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="10.0">
+      <Label text="NODE TIMEOUT:"/>
+      <TextField fx:id="nodeTimeoutTextField" prefWidth="30.0"/>
+   </HBox>
+   <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="10.0">
+      <Label text="MAX PLAYERS:"/>
+      <TextField fx:id="maxPlayersTextField" prefWidth="30.0"/>
+   </HBox>
+   <Button fx:id="startButton" onMouseClicked="#startButtonClicked" mnemonicParsing="false" text="Start">
+      <VBox.margin>
+         <Insets bottom="10.0"/>
+      </VBox.margin>
+   </Button>
 </VBox>

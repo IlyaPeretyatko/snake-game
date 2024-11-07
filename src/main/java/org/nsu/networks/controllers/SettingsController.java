@@ -5,18 +5,11 @@ import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
 import javafx.scene.input.MouseEvent;
 import org.nsu.networks.model.GameModel;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Component;
 
-@Component
+
 public class SettingsController {
 
-    private final GameModel gameModel;
-
-    @Autowired
-    public SettingsController(GameModel gameModel) {
-        this.gameModel = gameModel;
-    }
+    private final GameModel gameModel = GameModel.getInstance();
 
     @FXML
     private TextField widthTextField;
