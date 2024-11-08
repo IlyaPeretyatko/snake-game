@@ -18,40 +18,28 @@
       </opaqueInsets>
    </Label>
    <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="10.0">
+      <Label text="GAME NAME" />
+      <TextField fx:id="gameNameTextField" prefWidth="150.0" />
+   </HBox>
+   <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="10.0">
       <Label text="FIELD SIZE:" />
-      <TextField fx:id="widthTextField" prefWidth="35.0" />
-      <TextField fx:id="heightTextField" prefWidth="35.0" />
+      <TextField fx:id="widthTextField" prefWidth="45.0" />
+      <TextField fx:id="heightTextField" prefWidth="45.0" />
    </HBox>
    <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="10.0">
       <Label text="FOOD STATIC:" />
-      <TextField fx:id="foodStaticTextField" prefWidth="30.0" />
-   </HBox>
-   <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="10.0">
-      <Label text="FOOD PER PLAYER:" />
-      <TextField fx:id="foodPerPlayerTextField" prefWidth="30.0" />
+      <TextField fx:id="foodStaticTextField" prefWidth="45.0" />
    </HBox>
    <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="10.0">
       <Label text="STATE DELAY:" />
-      <TextField fx:id="stateDelayTextField" prefWidth="30.0" />
-   </HBox>
-   <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="10.0">
-      <Label text="DEAD FOOD PROB:" />
-      <TextField fx:id="deadFoodProbTextField" prefWidth="30.0" />
-   </HBox>
-   <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="10.0">
-      <Label text="PING DELAY:" />
-      <TextField fx:id="pingDelayTextField" prefWidth="30.0" />
-   </HBox>
-   <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="10.0">
-      <Label text="NODE TIMEOUT:" />
-      <TextField fx:id="nodeTimeoutTextField" prefWidth="30.0" />
+      <TextField fx:id="stateDelayTextField" prefWidth="50.0" />
    </HBox>
    <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="10.0">
       <Label text="MAX PLAYERS:" />
       <TextField fx:id="maxPlayersTextField" prefWidth="30.0" />
    </HBox>
    <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="10.0">
-      <Button mnemonicParsing="false" onMouseClicked="#backButtonClicked" text="Back"/>
-      <Button mnemonicParsing="false" onMouseClicked="#startButtonClicked" text="Start"/>
+      <Button mnemonicParsing="false" onMouseClicked="#backButtonClicked" text="Back" />
+      <Button mnemonicParsing="false" onMouseClicked="#startButtonClicked" text="Start" />
    </HBox>
 </VBox>

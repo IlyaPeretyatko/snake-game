@@ -13,13 +13,23 @@ public class GameModel {
     public static GameModel getInstance() {
         if (instance == null) {
             instance = new GameModel();
-            instance.setName("Player");
-            instance.setWidthField(25);
-            instance.setHeightField(25);
-            instance.setFoodStatic(0);
+            initialize();
         }
         return instance;
     }
+
+    private static void initialize() {
+        instance.setName("Player");
+        instance.setWidthField(25);
+        instance.setHeightField(25);
+        instance.setFoodStatic(0);
+        instance.setMaxPlayers(2);
+        instance.setStateDelay(1000);
+    }
+
+    @Setter
+    @Getter
+    private String GameName;
 
     @Setter
     @Getter
@@ -39,25 +49,12 @@ public class GameModel {
 
     @Setter
     @Getter
-    private int foodPerPlayer;
-
-    @Setter
-    @Getter
-    private double stateDelay;
-
-    @Setter
-    @Getter
-    private int deadFoodProb;
-
-    @Setter
-    @Getter
-    private int pingDelay;
-
-    @Setter
-    @Getter
-    private int nodeTimeout;
+    private int stateDelay;
 
     @Setter
     @Getter
     private int maxPlayers;
+
+
+
 }
