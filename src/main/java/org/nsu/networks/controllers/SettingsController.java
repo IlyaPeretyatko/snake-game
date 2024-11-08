@@ -58,13 +58,18 @@ public class SettingsController implements Initializable {
         window.show();
     }
 
-    public void startButtonClicked(MouseEvent mouseEvent) {
+    public void startButtonClicked(MouseEvent mouseEvent) throws IOException {
         try {
             checkGameNameTextField();
             checkSizeTextFields();
             checkFoodTextFields();
             checkStateDelayTextField();
             checkMaxPlayersTextField();
+            Parent newGameParent = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/fxml/field.fxml")));
+            Scene newGameScene = new Scene(newGameParent);
+            Stage window = (Stage)((Node)mouseEvent.getSource()).getScene().getWindow();
+            window.setScene(newGameScene);
+            window.show();
         } catch (WrongSettingsException e) {
             throwError(e.getHeader(), e.getContent());
         }
